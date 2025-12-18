@@ -1,0 +1,6 @@
+@startuml
+Client -> Server: データ要求
+Server -> Database:　データ検索
+Databese --> Server: 検索結果
+Server --> Client:　結果返却
+@enduml
