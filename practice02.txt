@@ -1,0 +1,11 @@
+@startuml
+participant Main
+participant calculate
+participant getInput
+
+Main -> calculate : calculate()関数の呼び出し
+calculate -> getInput : getInput()の呼び出し
+getInput --> calculate : 入力データを返す
+calculate --> Main : 結果返却
+Main -> Main : 結果出力
+@enduml
